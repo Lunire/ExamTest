@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.example-card {
+  padding: 0.7rem;
+  width: 100%;
+  max-width: 370px;
+  background: rgba(255, 255, 255, 0.3); // ขาวใส 20%
+
+  mat-card-title {
+    text-align: center; // จัด title อยู่ตรงกลางใต้ avatar
+    margin: 0 0 20px 0;
+  }
+
+  mat-card-header {
+    display: flex;
+    flex-direction: column; // ให้ header เป็นแนวตั้ง
+    align-items: center; // จัดกลางทั้งแนวนอน
+
+    img {
+      width: 150px; // ขนาดใหญ่ขึ้น
+      height: 100%; // ขนาดใหญ่ขึ้น
+      margin: 0 0 32px 0; // เว้นระยะด้านล่างจาก title
+    }
+  }
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.detail {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+}

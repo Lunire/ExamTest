@@ -1,0 +1,11 @@
+.app-header {
+  height: 280px; /* กำหนดความสูง header */
+  width: 100%;   /* เต็มความกว้างหน้าจอ */
+  background: url('/assets/Images/e4a8790137dd4dadac10e704e3d92700.png') no-repeat center center;
+  background-size: cover; /* ให้ภาพเต็มพื้นที่ header */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
