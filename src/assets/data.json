@@ -253,5 +253,19 @@
       "Description": "กาแฟปั่น หวานละมุน หอมนุ่มกลิ่นไวท์ช็อกโกแลต",
       "Image": "bcedcae2f8f24550bdc810860b7c4bf2.png"
     }
+  ],
+  "users": [
+    {
+      "email": "user1@example.com",
+      "password": "123456",
+      "username": "User1",
+      "role": "Maneger"
+    },
+    {
+      "email": "user2@example.com",
+      "password": "abcdef",
+      "username": "User2",
+      "role": "Staff"
+    }
   ]
 }

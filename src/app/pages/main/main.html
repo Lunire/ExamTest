@@ -1,3 +1,20 @@
 <div class="container">
-    <p>main works!</p>
+  <img src="assets/Images/products-coffee.png" alt="" class="first">
+  
+  <div class="type">
+    <button mat-button [routerLink]="['/list', 'hot']">
+      <img src="assets/Images/icon_hot.png" alt="">
+      เมนูร้อน
+    </button>
+
+    <button mat-button [routerLink]="['/list', 'cool']">
+      <img src="assets/Images/icon_cool.png" alt="">
+      เมนูเย็น
+    </button>
+
+    <button mat-button [routerLink]="['/list', 'smooty']">
+      <img src="assets/Images/icon_smooty.png" alt="">
+      เมนูปั่น
+    </button>
+  </div>
 </div>

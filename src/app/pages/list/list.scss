@@ -1,0 +1,98 @@
+.list-page {
+  display: flex;
+  flex-direction: column; // เรียงแนวตั้ง
+  align-items: center; // จัดกลางแนวนอน
+  position: relative;
+  z-index: 1;
+
+  .menu-header {
+    display: flex;
+    align-items: center; // จัดให้ vertical กลางบรรทัด
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    .back-link,
+    .menu-title {
+      font-size: 2rem; // ฟอนต์เท่ากัน
+      font-weight: 500; // น้ำหนักเท่ากัน
+      margin: 0; // ลบ margin ของ h2
+      color: #333; // กำหนดสีให้ใกล้เคียงกัน
+    }
+
+    .back-link {
+      text-decoration: none; // เอาเส้นใต้ลิงก์ออก
+      color: #015508; // ใส่สีลิงก์
+    }
+  }
+
+  .products-container {
+    display: flex;
+    flex-direction: column; // เรียงแนวตั้ง (หลาย card)
+    justify-content: center;
+    gap: rem;
+
+    .product-card {
+      display: flex;
+      flex-direction: row; // ให้รูปกับ content อยู่ซ้าย-ขวา
+      align-items: flex-start;
+      width: 100%;
+      max-width: 600px; // ความกว้างรวม card
+
+      img {
+        width: 250px; // กำหนดรูปคงที่ 250px
+        height: auto; // กำหนดให้เป็นสี่เหลี่ยมจัตุรัส
+        object-fit: cover; // ไม่บิดเพี้ยน
+        border-radius: 8px; // เพิ่มความสวยงาม
+      }
+
+      mat-card-content {
+        flex: 1;
+        padding: 0 1rem; // เว้นระยะระหว่างรูปกับ content
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin-top: 100px;
+
+        h3 {
+          margin: 0;
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+          color: #03620b;
+        }
+      }
+    }
+
+    mat-card-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 12rem;
+      margin-left: -120px;
+
+      button {
+        width: 60px; // ขยายปุ่มให้ใหญ่กว่าขนาด icon
+        height: 60px;
+        border-radius: 50%; // กลมสมบูรณ์
+        background-color: #c86823 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        mat-icon {
+          font-size: 24px; // ขนาด icon ที่ต้องการ
+          line-height: 1; // แก้ปัญหาโดนบีบ
+          width: auto; // ปล่อยให้ขยายได้อิสระ
+          height: auto;
+          color: white;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

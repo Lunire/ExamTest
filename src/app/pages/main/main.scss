@@ -1,6 +1,44 @@
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction: column; // เรียงแนวตั้ง
+  align-items: center; // จัดกลางแนวนอน
+  position: relative;
+  z-index: 1;
+
+  .first {
+    max-width: 100%; // ไม่เกิน container
+    height: auto; // รักษาสัดส่วน
+    display: block; // ลบ whitespace ด้านล่าง
+    margin-bottom: 1rem; // เว้นระยะกับปุ่มด้านล่าง
+  }
+
+  .type {
+    display: flex;
+    flex-direction: row; // เรียงแนวตั้ง
+    align-items: center; // จัดกลางแนวนอน
+    gap: 20px;
+  }
+
+  .type button {
+    display: flex; // จัด icon + ข้อความให้อยู่บรรทัดเดียว
+    align-items: center; // จัดตรงกลางแนวตั้ง
+    justify-content: center; // จัดตรงกลางแนวนอน (ถ้าต้องการ)
+    gap: 1rem; // เว้นระยะ icon กับข้อความ
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px;
+    line-height: normal; // ป้องกันข้อความเลื่อน
+    color: black !important;
+
+    &:hover {
+     filter: brightness(30%);
+    }
+  }
+
+  .type button img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    vertical-align: middle; // ให้ icon อยู่ตรงกลางบรรทัด
+    padding-right: 10px;
+  }
 }

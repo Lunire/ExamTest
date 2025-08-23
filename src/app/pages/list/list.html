@@ -1,0 +1,27 @@
+<div class="list-page">
+    <div class="menu-header">
+        <a routerLink="/main" class="back-link">หน้าหลัก</a>
+        <h2 class="menu-title">/ {{ menuLabel }}</h2>
+    </div>
+
+    <div class="products-container">
+        <div *ngFor="let product of products" class="product-card">
+            <img mat-card-image [src]="'assets/Images/' + product.Image" [alt]="product.ProductName" />
+
+            <mat-card-content>
+                <h3>{{ product.ProductName }}</h3>
+                <p>{{ product.Description }}</p>
+            </mat-card-content>
+
+            <mat-card-footer>
+                <!-- <div class="type-info">
+          <img [src]="'assets/Images/' + product.TypeProduct.Image" [alt]="product.TypeProduct.TypeName" />
+          <span>{{ product.TypeProduct.TypeName }}</span>
+        </div> -->
+                <button mat-button>
+                    <mat-icon>shopping_cart</mat-icon>
+                </button>
+            </mat-card-footer>
+        </div>
+    </div>
+</div>

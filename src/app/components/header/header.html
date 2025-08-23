@@ -1,8 +1,22 @@
-<!-- <header class="app-header">
-  <h1>My Website</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-</header> -->
+<header class="app-header">
+  <div class="header-content">
+    <div class="logo">
+      <img src="/assets/Images/logo.png" alt="Café Amazon Logo" class="logo">
+      <div class="logo-section">
+        <div class="brand-name">Café Amazon @ CS-MSU</div>
+      <div class="user-info">
+        <div class="user-name">{{ auth.currentUser?.username }} ({{ auth.currentUser?.role }})</div>
+      </div>
+      </div>
+      
+    </div>
+    
+    <div class="user-section">
+      
+      <button class="btn-logout" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        ออกจากระบบ
+      </button>
+    </div>
+  </div>
+</header>

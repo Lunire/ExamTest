@@ -37,6 +37,18 @@ mat-form-field {
     text-align: center;
 }
 
-button {
-    width: 100%;
+mat-card-actions {
+  width: 100%; // ให้ container ของปุ่มเต็มความกว้าง
+
+  button {
+    width: 100%;               // ให้ปุ่มเต็ม container
+    padding: 1.6rem !important; 
+    border-radius: 4px;       
+    background-color: rgb(233, 124, 0);
+    color: #fff !important;
+    font-size: 16px;
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+  }
 }
